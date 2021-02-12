@@ -9,36 +9,20 @@
 </head>
 
 <body>
-  <div id="qunit"></div>
-  <div id="qunit-fixture"></div>
-  <script src="https://code.jquery.com/qunit/qunit-2.9.1.js"></script>
-  <script>
-    function storageMock() {
-      var storage = {};
 
-      return {
-        setItem: function (key, value) {
-          storage[key] = value || '';
-        },
-        getItem: function (key) {
-          return key in storage ? storage[key] : null;
-        },
-        removeItem: function (key) {
-          delete storage[key];
-        },
-        get length() {
-          return Object.keys(storage).length;
-        },
-        key: function (i) {
-          var keys = Object.keys(storage);
-          return keys[i] || null;
-        }
-      };
-    }
+  <header>
+    Madlib Excercise
+  </header>
 
-    Object.defineProperty(window, 'localStorage', {
-      value: storageMock(),
-    });</script>
+  <main>
+    <div class = 'wrapper'>
+    <div class = 'left-side'>place holder</div>
+    <div class = 'right side'>place holder</div>
+    </div>
+
+    
+  </main>
+ 
 
   <script type="module" src="tests.js"></script>
 </body>
