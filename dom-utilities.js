@@ -1,5 +1,4 @@
 export function sync(input, span) {
-    span = input;
-    return span;
+    return span.textContent = input.value;
 
 }

@@ -1,6 +1,6 @@
 import { sync } from '../dom-utilities.js';
 
-
+const test = QUnit.test;
 
 test('sync input to element', (expect) => {
     //Arrange
